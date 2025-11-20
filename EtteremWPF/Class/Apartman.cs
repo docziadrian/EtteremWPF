@@ -8,8 +8,11 @@ namespace Szalloda
 {
     public class Apartman : NyitottSzallas
     {
-        public Apartman(string recepcioNyitvatartas, bool vanSajatParkolo, bool bankkartyaElfogadas) : base(recepcioNyitvatartas, vanSajatParkolo, bankkartyaElfogadas)
+        public Apartman(string recepcioNyitvatartas, bool vanSajatParkolo, bool bankkartyaElfogadas, bool konyhafelszerelt, bool sajatbejarat, bool legkondi) : base(recepcioNyitvatartas, vanSajatParkolo, bankkartyaElfogadas)
         {
+           KonyhaFelszerelt = konyhafelszerelt;
+            SajatBejarat = sajatbejarat;
+            Legkondicionalt = legkondi;
         }
 
         private bool KonyhaFelszerelt { get; set; }
