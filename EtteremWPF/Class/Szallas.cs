@@ -9,19 +9,19 @@ namespace Szalloda
     public abstract class Szallas
     {
 
-        private int ID { get; set; }
-        private string Nev { get; set; }
-        private string Cim { get; set; }
-        private decimal Ar { get; set; }
-        private string TulajNev { get; set; }
-        private string CegNev { get; set; }
+        protected int ID { get; set; }
+        protected string Nev { get; set; }
+        protected string Cim { get; set; }
+        protected decimal Ar { get; set; }
+        protected internal string TulajNev { get; set; }
+        protected string CegNev { get; set; }
 
-        private string Leiras { get; set; }
-        private string Telefon { get; set; }
-        private string Email { get; set; }
+        protected string Leiras { get; set; }
+        protected string Telefon { get; set; }
+        protected string Email { get; set; }
 
-        private int SzobakSzama { get; set; }
-        private int MaxFerohely { get; set; }
+        protected int SzobakSzama { get; set; }
+        protected int MaxFerohely { get; set; }
         protected Szallas(int iD, string nev, string cim, decimal ar, string tulajNev, string cegNev, string leiras, string telefon, string email, int szobakSzama, int maxFerohely)
         {
             ID = iD;

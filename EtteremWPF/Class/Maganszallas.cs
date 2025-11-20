@@ -15,5 +15,11 @@ namespace Szalloda
         }
         private bool HaziallatEngedelyezett { get; set; }
         private bool SajatTulajdonbanVan { get; set; }
+
+        public bool HaziallatEngedelyezettE() { return this.HaziallatEngedelyezett; }
+
+        public bool PrivatSzallasE() { return this.SajatTulajdonbanVan; }
+
+        public string TulajNevMegjelenites() { return this.TulajNev; }
     }
 }

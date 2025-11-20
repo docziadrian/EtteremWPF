@@ -15,6 +15,21 @@ namespace Szalloda
             BankkartyaElfogadas = bankkartyaelfogadas;
         }
 
+        public bool RecepcioNyitvaE(DateTime idopont)
+        {
+            return true; // Egyszerűsített példa, mindig nyitva van
+        }
+
+        public bool ParkoloElerhetoE()
+        {
+            return VanSajatParkolo;
+        }
+
+        public bool BankkartyaElfogadasE()
+        {
+            return BankkartyaElfogadas;
+        }
+
         private string RecepcioNyitvatartas { get; set; }
         private bool VanSajatParkolo { get; set; }
         private bool BankkartyaElfogadas { get; set; }
