@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Szalloda
 {
-    internal class Maganszallas : Szallas
+    public abstract class Maganszallas : Szallas
     {
-        private string TulajdonosNeve;
+        private bool HaziallatEngedelyezett { get; set; }
+        private bool SajatTulajdonbanVan { get; set; }
     }
 }

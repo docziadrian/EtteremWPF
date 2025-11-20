@@ -8,5 +8,8 @@ namespace Szalloda
 {
     internal class Apartman : Nyitottszallas
     {
+        public bool KonyhaFelszerelt { get; set; }
+        public bool SajatBejarat { get; set; }
+        public bool Legkondicionalt { get; set; }
     }
 }

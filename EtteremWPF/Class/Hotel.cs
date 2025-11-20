@@ -8,5 +8,10 @@ namespace Szalloda
 {
     internal class Hotel : Nyitottszallas
     {
+        public int CsillagokSzama { get; set; }
+        public bool WellnessVan { get; set; }
+        public bool MedenceVan { get; set; }
+        public int EmeletekSzama { get; set; }
+        public bool LiftVan { get; set; }
     }
 }

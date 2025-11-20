@@ -8,5 +8,7 @@ namespace Szalloda
 {
     internal class Vendeghaz : Maganszallas
     {
+        public int KertKapacitas { get; set; }
+        public bool KonyhaHasznalhato { get; set; }
     }
 }

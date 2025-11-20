@@ -8,5 +8,7 @@ namespace Szalloda
 {
     internal class Panzio : Maganszallas
     {
+        public bool ReggeliVan { get; set; }
+        public int? CsillagokSzama { get; set; }
     }
 }
