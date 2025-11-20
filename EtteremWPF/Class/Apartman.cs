@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace Szalloda
 {
-    internal class Apartman : Nyitottszallas
+    public class Apartman : NyitottSzallas
     {
-        public bool KonyhaFelszerelt { get; set; }
-        public bool SajatBejarat { get; set; }
-        public bool Legkondicionalt { get; set; }
+        public Apartman(string recepcioNyitvatartas, bool vanSajatParkolo, bool bankkartyaElfogadas) : base(recepcioNyitvatartas, vanSajatParkolo, bankkartyaElfogadas)
+        {
+        }
+
+        private bool KonyhaFelszerelt { get; set; }
+        private bool SajatBejarat { get; set; }
+        private bool Legkondicionalt { get; set; }
+    
+
     }
+
 }

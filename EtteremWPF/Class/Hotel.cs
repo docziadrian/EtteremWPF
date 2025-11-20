@@ -6,12 +6,20 @@ using System.Threading.Tasks;
 
 namespace Szalloda
 {
-    internal class Hotel : Nyitottszallas
+    public class Hotel : NyitottSzallas
     {
-        public int CsillagokSzama { get; set; }
-        public bool WellnessVan { get; set; }
-        public bool MedenceVan { get; set; }
-        public int EmeletekSzama { get; set; }
-        public bool LiftVan { get; set; }
+        public Hotel(int iD, string nev, string cim, decimal ar, string tulajNev, string cegNev, string leiras, string telefon, string email, int szobakSzama, int maxFerohely, string receprioNyitvatartas, bool vansajatparkolo, bool bankkartyaelfogadas, int csillagokSzama, bool wellnessVan, bool medenceVan, int emeletekSzama, bool liftVan) : base(iD, nev, cim, ar, tulajNev, cegNev, leiras, telefon, email, szobakSzama, maxFerohely, receprioNyitvatartas, vansajatparkolo, bankkartyaelfogadas)
+        {
+            CsillagokSzama = csillagokSzama;
+            WellnessVan = wellnessVan;
+            MedenceVan = medenceVan;
+            EmeletekSzama = emeletekSzama;
+            LiftVan = liftVan;
+        }
+        private int CsillagokSzama { get; set; }
+        private bool WellnessVan { get; set; }
+        private bool MedenceVan { get; set; }
+        private int EmeletekSzama { get; set; }
+        private bool LiftVan { get; set; }
     }
 }

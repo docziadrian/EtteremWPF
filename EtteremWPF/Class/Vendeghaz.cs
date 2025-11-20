@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace Szalloda
 {
-    internal class Vendeghaz : Maganszallas
+    public class Vendeghaz : Maganszallas
     {
-        public int KertKapacitas { get; set; }
-        public bool KonyhaHasznalhato { get; set; }
+        private int KertKapacitas { get; set; }
+        private bool KonyhaHasznalhato { get; set; }
+        public Vendeghaz(int iD, string nev, string cim, decimal ar, string tulajNev, string cegNev, string leiras, string telefon, string email, int szobakSzama, int maxFerohely, bool haziallatengedelyezett, bool sajattulajdonbanvan, int kertkapacitas, bool konyhahasznalhato) : base(iD, nev, cim, ar, tulajNev, cegNev, leiras, telefon, email, szobakSzama, maxFerohely, haziallatengedelyezett, sajattulajdonbanvan)
+        {
+            KertKapacitas = kertkapacitas;
+            KonyhaHasznalhato = konyhahasznalhato;
+        }
     }
 }
