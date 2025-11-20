@@ -21,5 +21,9 @@ namespace Szalloda
         private bool MedenceVan { get; set; }
         private int EmeletekSzama { get; set; }
         private bool LiftVan { get; set; }
+        public override void RovidLeiras()
+        {
+            Console.WriteLine("Ez egy hotel!");
+        }
     }
 }

@@ -15,6 +15,11 @@ namespace Szalloda
         }
 
         private bool ReggeliVan { get; set; }
-        private int? CsillagokSzama { get; set; }    
+        private int? CsillagokSzama { get; set; }
+
+        public override void RovidLeiras()
+        {
+            Console.WriteLine("Ez egy panzíó!");
+        }
     }
 }

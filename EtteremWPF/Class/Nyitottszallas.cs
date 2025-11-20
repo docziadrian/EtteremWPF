@@ -15,24 +15,15 @@ namespace Szalloda
             BankkartyaElfogadas = bankkartyaelfogadas;
         }
 
-        public bool RecepcioNyitvaE(DateTime idopont)
-        {
-            return true; // Egyszerűsített példa, mindig nyitva van
-        }
 
-        public bool ParkoloElerhetoE()
-        {
-            return VanSajatParkolo;
-        }
+        protected string RecepcioNyitvatartas { get; set; }
+        protected bool VanSajatParkolo { get; set; }
+        protected bool BankkartyaElfogadas { get; set; }
 
-        public bool BankkartyaElfogadasE()
+        public override void RovidLeiras()
         {
-            return BankkartyaElfogadas;
+            Console.WriteLine("Ez egy nyitottszállás!");
         }
-
-        private string RecepcioNyitvatartas { get; set; }
-        private bool VanSajatParkolo { get; set; }
-        private bool BankkartyaElfogadas { get; set; }
 
     }
 

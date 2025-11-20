@@ -18,8 +18,11 @@ namespace Szalloda
         private bool KonyhaFelszerelt { get; set; }
         private bool SajatBejarat { get; set; }
         private bool Legkondicionalt { get; set; }
-    
 
+        public override void RovidLeiras()
+        {
+            Console.WriteLine("Ez egy apartman!");
+        }
     }
 
 }

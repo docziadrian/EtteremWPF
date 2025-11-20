@@ -49,7 +49,7 @@ namespace Szalloda
         {
             Console.WriteLine($"Tulajdonos neve: {this.TulajNev}, Telefon: {this.Telefon}, E-mail címe: {this.Email}");
         }
-        public void RovidLeiras()
+        public virtual void RovidLeiras()
         {
             Console.WriteLine($"Szállás neve: {this.Nev}, Címe: {this.Cim}, ára éjszakánként: {this.Ar} Ft");
         }

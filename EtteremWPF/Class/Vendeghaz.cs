@@ -15,5 +15,9 @@ namespace Szalloda
             KertKapacitas = kertkapacitas;
             KonyhaHasznalhato = konyhahasznalhato;
         }
+        public override void RovidLeiras()
+        {
+            Console.WriteLine("Ez egy vendégház!");
+        }
     }
 }
